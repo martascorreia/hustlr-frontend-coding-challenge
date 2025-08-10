@@ -28,6 +28,7 @@ const Product = () => {
       const data = await response.json();
       setProduct(data);
       setLoading(false);
+      console.log(data.category)
       const response2 = await fetch(
         `https://fakestoreapi.com/products/category/${data.category}`
       );
