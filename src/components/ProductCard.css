@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 450px; /* or something that fits your content */
+  height: 450px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -66,14 +66,12 @@
 .product-card {
   display: flex;
   flex-direction: column;
-  height: 100%; /* ensure all cards have the same height */
+  height: 100%;
 }
-
 
 .buttons-container {
   display: flex;
-  justify-content: center; /* or space-between */
-  gap: 10px; /* space between buttons */
+  justify-content: center;
   align-items: center;
-  margin-top: auto; /* pushes buttons to bottom if container is flex column */
+  flex-wrap: wrap;
 }
